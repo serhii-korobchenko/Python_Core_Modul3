@@ -11,5 +11,21 @@
 вычисляющую числа последовательности до тех пор, пока вызов не дойдет до членов 
 ряда меньше n = 1, где последовательность задана. """
 
+from unittest import result
+
+
+
 def fibonacci(n):
-    
+
+
+    if n == 0:
+        return 0 # base case
+    elif n <= 1:
+        return 1 # base case
+    else:
+        result = fibonacci(n-1) + fibonacci(n-2) #recursive case
+        return result
+
+
+for i in range (0,10):
+    print(fibonacci(i))
