@@ -52,4 +52,15 @@ if __name__ == "__main__":
 print(convert_to_seconds(minutes=5, days=1, week=1)) """
 
 
+def factorial(n):
+
+    if n== 0:
+        return 1
+
+    else:
+        return n * factorial(n - 1)
+
+def number_of_groups(n, k):
+
+    return factorial(n) 
 
